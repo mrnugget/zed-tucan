@@ -1,0 +1,14 @@
+name = "Tucan"
+grammar = "tucan"
+path_suffixes = ["tuc"]
+line_comments = ["// "]
+autoclose_before = "}])"
+tab_size = 2
+brackets = [
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "[", end = "]", close = true, newline = true },
+    { start = "(", end = ")", close = true, newline = true },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = [
+        "string",
+    ] },
+]

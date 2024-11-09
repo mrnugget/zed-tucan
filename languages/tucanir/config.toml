@@ -1,0 +1,14 @@
+name = "Tucan IR"
+grammar = "tucanir"
+path_suffixes = ["tucir"]
+line_comments = []
+autoclose_before = "}])"
+tab_size = 2
+brackets = [
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "[", end = "]", close = true, newline = true },
+    { start = "(", end = ")", close = true, newline = true },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = [
+        "string",
+    ] },
+]

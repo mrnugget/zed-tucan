@@ -1,0 +1,15 @@
+id = "tucan"
+name = "Tucan"
+version = "0.0.1"
+schema_version = 1
+authors = ["Thorsten Ball <me@thorstenball.com>"]
+description = "Extension for my Tucan language"
+repository = "https://github.com/mrnugget/zed-tucan"
+
+[grammars.tucan]
+repository = "https://github.com/mrnugget/tree-sitter-tucan"
+commit = "14269f79d6be0aa93f214f9315711138ad119658"
+
+[grammars.tucanir]
+repository = "https://github.com/mrnugget/tree-sitter-tucanir"
+commit = "ce4d5439ae986bf4125468ac6023ab81c8bbe1b9"
